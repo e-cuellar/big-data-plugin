@@ -24,7 +24,7 @@ package org.pentaho.big.data.kettle.plugins.hadoopcluster.ui.dialog.wizard;
 import org.eclipse.jface.wizard.Wizard;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
-//import org.pentaho.big.data.impl.cluster.NamedClusterManager;
+import org.pentaho.big.data.impl.cluster.NamedClusterManager;
 import org.pentaho.big.data.kettle.plugins.hadoopcluster.ui.dialog.wizard.pages.ClusterSettingsPage;
 import org.pentaho.big.data.kettle.plugins.hadoopcluster.ui.dialog.wizard.pages.KerberosSettingsPage;
 import org.pentaho.big.data.kettle.plugins.hadoopcluster.ui.dialog.wizard.pages.KnoxSettingsPage;
@@ -339,7 +339,6 @@ public class NamedClusterDialog extends Wizard {
     return isEditMode;
   }
 
-  /*
   public static void main( String[] args ) {
     try {
       PluginRegistry.addPluginType( TwoWayPasswordEncoderPluginType.getInstance() );
@@ -359,5 +358,4 @@ public class NamedClusterDialog extends Wizard {
       log.logError( e.getMessage() );
     }
   }
-  */
 }
